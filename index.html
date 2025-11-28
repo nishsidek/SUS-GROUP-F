@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Care Initiative - Welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // Slate 900
+                        accent: '#0ea5e9', // Sky 500 - slightly softer/friendlier blue for animals
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Custom image placeholder styling */
+        .image-placeholder-area {
+            /* Updated to a veterinary/animal care image */
+            background-image: url("https://images.unsplash.com/photo-1628009368231-760335298453?auto=format&fit=crop&q=80&w=1200");
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .image-placeholder-area:hover {
+            transform: scale(1.01);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-600 antialiased bg-slate-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <!-- Logo Placeholder -->
+                        <div class="bg-primary text-white font-bold text-xl px-3 py-1 rounded">SUS</div>
+                        <span class="ml-2 font-semibold text-slate-800 text-lg">Group F</span>
+                    </div>
+                </div>
+               <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
+                    <a href="#" class="border-accent text-slate-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                    <a href="#content" class="border-transparent text-slate-500 hover:border-slate-300 hover:text-slate-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Mission</a>
+                   <a href="#" class="border-transparent text-slate-500 hover:border-slate-300 hover:text-slate-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Join us</a>
+    
+    <a href="donate-qrcode.html" target="_blank" class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-800 transition">Donate</a>
+</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-20 px-4 sm:px-6 lg:px-8">
+                
+                <main class="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">Prioritizing Awareness</span>
+                            <span class="block text-accent xl:inline">& Healthcare for Animals</span>
+                        </h1>
+                        <p class="mt-3 text-base text-slate-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            We are dedicated to improving the lives of animals through comprehensive medical care and community education. Join us in creating a safer world for our furry friends.
+                        </p>
+                        <p class="mt-2 text-sm text-slate-400">
+                            Compassionate Care. Global Impact. Sustainable Future.
+                        </p>
+                        
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#content" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent hover:bg-sky-600 md:py-4 md:text-lg md:px-10 transition">
+                                    Our Mission
+                                </a>
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-accent bg-sky-50 hover:bg-sky-100 md:py-4 md:text-lg md:px-10 transition">
+                                    Volunteer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+        <!-- IMAGE CONTAINER -->
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <!-- 
+                TO CHANGE IMAGE: 
+                1. Locate the .image-placeholder-area style in the <head> tag 
+                2. Change the URL to your own image link
+                OR
+                3. Replace this div below with an <img src="your-image.jpg"> tag 
+            -->
+            <div class="h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full image-placeholder-area relative group">
+                <!-- Overlay hint for the user -->
+                <div class="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-20 transition flex items-center justify-center">
+                    <span class="sr-only">Veterinary Care Image</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content of Pages Section -->
+    <section id="content" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base text-accent font-semibold tracking-wide uppercase">Initiatives</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+                    Our Objectives
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-slate-500 mx-auto">
+                    Exploring the reality of animals life's and increasing awareness amongst the new generation
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                
+                <!-- Page Card 1 -->
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex-shrink-0 h-48 bg-slate-200 flex items-center justify-center text-slate-400">
+                        <i class="fas fa-heartbeat text-4xl"></i>
+                    </div>
+                    <div class="flex-1 p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-accent">
+                                <a href="#" class="hover:underline">Our Volunteer Teams</a>
+                            </p>
+                            <a href="#" class="block mt-2">
+                                <p class="text-xl font-semibold text-slate-900">What are we?</p>
+                                <p class="mt-3 text-base text-slate-500">
+                                    A form groups of student from Multimedia University (MMU) located in Cyberjaya trying to complete their assignment for Sustainable Society Project. Absolute Cinema  
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page Card 2 -->
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex-shrink-0 h-48 bg-slate-200 flex items-center justify-center text-slate-400">
+                        <i class="fas fa-bullhorn text-4xl"></i>
+                    </div>
+                    <div class="flex-1 p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-accent">
+                                <a href="#" class="hover:underline">Activity</a>
+                            </p>
+                            <a href="#" class="block mt-2">
+                                <p class="text-xl font-semibold text-slate-900">Animals Shelter Contribution</p>
+                                <p class="mt-3 text-base text-slate-500">
+                                    By prioritizing Awareness & Healthcare for animals  we give a voice to the voiceless and ensure a safer, healthier future for everyone.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page Card 3 -->
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex-shrink-0 h-48 bg-slate-200 flex items-center justify-center text-slate-400">
+                        <i class="fas fa-hand-holding-heart text-4xl"></i>
+                    </div>
+                    <div class="flex-1 p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-accent">
+                                <a href="#" class="hover:underline">Community</a>
+                            </p>
+                            <a href="#" class="block mt-2">
+                                <p class="text-xl font-semibold text-slate-900">Financial Support</p>
+                                <p class="mt-3 text-base text-slate-500">
+                                    Donations and Partnership the backbone for our project in the process of making a brighter future for our little friends  to help them find a better life's and longer life span. 
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center md:flex-row flex-col">
+                <div class="flex justify-center space-x-6 md:order-2">
+                    <a href="#" class="text-slate-400 hover:text-slate-300">
+                        <span class="sr-only">LinkedIn</span>
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-slate-300">
+                        <span class="sr-only">Twitter</span>
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-slate-300">
+                        <span class="sr-only">Instagram</span>
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </div>
+                <div class="mt-8 md:mt-0 md:order-1">
+                    <p class="text-center text-base text-slate-400">
+                        &copy; 2025 Animal Care Initiative. Group F rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
